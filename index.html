@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GRAVITY MEDIA — connect beyond the ordinary." />
+  <title>GRAVITY💠MEDIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Gravity Media home"><span class="brand-mark">✦</span><span>GRAVITY<span class="brand-diamond">◆</span>MEDIA</span></a>
+      <nav class="nav-list">
+        <button class="nav-item active" data-view="home"><span>⌂</span>Home</button>
+        <button class="nav-item" data-view="explore"><span>⌕</span>Explore</button>
+        <button class="nav-item" data-view="reels"><span>▶</span>Reels</button>
+        <button class="nav-item" data-view="messages"><span>◌</span>Messages</button>
+        <button class="nav-item" data-view="notifications"><span>♢</span>Notifications <b class="badge hidden" id="notificationBadge">0</b></button>
+        <button class="nav-item" data-view="communities"><span>◎</span>Communities</button>
+        <button class="nav-item" data-view="marketplace"><span>◇</span>Marketplace</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-view="settings"><span>⚙</span>Settings</button>
+        <button class="nav-item" id="themeToggle"><span>☼</span>Appearance</button>
+        <button class="ai-button" id="gravityAI"><span class="ai-orbit">✦</span><span><strong>Gravity AI</strong><small>External app ↗</small></span></button>
+        <button class="profile-mini" data-view="profile"><span class="avatar avatar-blue">NM</span><span><strong>nihaal</strong><small>View profile</small></span><span class="more">•••</span></button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="mobile-header"><a class="brand" href="#home"><span class="brand-mark">✦</span><span>GRAVITY<span class="brand-diamond">◆</span>MEDIA</span></a><button class="icon-button" id="mobileTheme">☼</button></header>
+      <div id="viewRoot"></div>
+    </main>
+
+    <aside class="right-rail" aria-label="Discovery">
+      <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search gravity" aria-label="Search gravity" /></div>
+      <section class="rail-card profile-card"><div class="cover-orbit"></div><div class="profile-card-body"><span class="avatar avatar-blue avatar-large">NM</span><h3>nihaal <span class="verified">✦</span></h3><p>@nihaalmenon96</p><div class="profile-stats"><span><strong>128</strong> posts</span><span><strong>2.4k</strong> followers</span><span><strong>486</strong> following</span></div><button class="outline-button" data-view="profile">View profile</button></div></section>
+      <section class="rail-card"><div class="card-heading"><h3>Trending in Gravity</h3><button class="text-button" data-view="explore">See all</button></div><div class="trend"><small>01 · Trending topic</small><strong>#FutureIsNow</strong><small>24.8K posts</small></div><div class="trend"><small>02 · Technology</small><strong>Space computing</strong><small>12.3K posts</small></div><div class="trend"><small>03 · Design</small><strong>Digital minimalism</strong><small>8.7K posts</small></div></section>
+      <p class="footer-note">About · Guidelines · Privacy · Terms<br>© 2025 Gravity Media</p>
+    </aside>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation"><button class="active" data-view="home">⌂<small>Home</small></button><button data-view="explore">⌕<small>Explore</small></button><button class="create-mobile" id="mobileCreate">＋</button><button data-view="reels">▶<small>Reels</small></button><button data-view="profile">◉<small>Profile</small></button></nav>
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
